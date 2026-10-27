@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAutos Luxury Car Rental, Chauffeur &amp; Security Escort | Lagos · Abuja · Port Harcourt</title>
+<meta name="description" content="Reserve Rolls-Royce Cullinan, 2025 Range Rover Autobiography, Mercedes-Maybach, Land Cruiser GR-Sport & Armed Escort Protocol instantly across Lagos, Abuja & Port Harcourt.">
+<style>
+  :root {
+    --bg: #07080B;
+    --surface: #0E1016;
+    --card: #13161F;
+    --card-hi: #191D29;
+    --gold: #C9A456;
+    --gold-bright: #E8C77B;
+    --text: #F8F8F6;
+    --soft: #B4B8C5;
+    --muted: #6E7485;
+    --green: #22C55E;
+    --border: rgba(201, 164, 86, 0.22);
+    --border-soft: rgba(255, 255, 255, 0.08);
+    --serif: 'Georgia', 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.58;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Top Ribbon */
+  .topbar {
+    background: #040507;
+    border-bottom: 1px solid var(--border-soft);
+    padding: 8px 22px;
+    font-size: 11.5px;
+    letter-spacing: 0.07em;
+    color: var(--soft);
+  }
+  .topbar-in {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .topbar a { color: var(--gold-bright); text-decoration: none; font-weight: 600; }
+  .dot { color: var(--gold); margin: 0 7px; }
+
+  /* Header */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(7, 8, 11, 0.92);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 15px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+  .logo-wrap img {
+    height: 38px;
+    width: auto;
+    object-fit: contain;
+  }
+  .menu {
+    display: flex;
+    gap: 26px;
+    list-style: none;
+  }
+  .menu a {
+    color: var(--soft);
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .menu a:hover { color: var(--gold-bright); }
+  .nav-cta {
+    background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+    color: #07080B;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    padding: 72px 22px 68px;
+    background: radial-gradient(circle at 80% 18%, rgba(201,164,86,0.16), transparent 45%),
+                linear-gradient(180deg, #07080B 0%, #0D1017 100%);
+    border-bottom: 1px solid var(--border-soft);
+  }
+  .hero-grid {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: 44px;
+    align-items: center;
+  }
+  .kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--gold-bright);
+    background: rgba(201,164,86,0.1);
+    border: 1px solid var(--border);
+    padding: 6px 13px;
+    border-radius: 99px;
+    margin-bottom: 18px;
+    font-weight: 700;
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(34px, 4.6vw, 56px);
+    font-weight: 400;
+    line-height: 1.08;
+    margin-bottom: 18px;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-bright);
+  }
+  .hero p {
+    font-size: 16px;
+    color: var(--soft);
+    max-width: 570px;
+    margin-bottom: 28px;
+    line-height: 1.68;
+  }
+  .hero-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 36px;
+  }
+  .btn-gold {
+    background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+    color: #07080B;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-outline {
+    background: rgba(255,255,255,0.04);
+    color: var(--text);
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid rgba(255,255,255,0.18);
+  }
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-soft);
+    max-width: 520px;
+  }
+  .stats strong {
+    display: block;
+    font-family: var(--serif);
+    font-size: 26px;
+    color: var(--gold-bright);
+    font-weight: 400;
+  }
+  .stats span { font-size: 12px; color: var(--muted); }
+
+  .hero-showcase {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    background: var(--card);
+    box-shadow: 0 24px 60px rgba(0,0,0,0.65);
+  }
+  .hero-showcase img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    display: block;
+  }
+  .showcase-caption {
+    padding: 16px 20px;
+    background: rgba(10,12,17,0.95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px solid var(--border-soft);
+  }
+  .showcase-caption strong { display: block; font-size: 15px; }
+  .showcase-caption small { color: var(--gold-bright); font-size: 12px; }
+
+  /* Sections */
+  section { padding: 76px 22px; }
+  .wrap { max-width: 1240px; margin: 0 auto; }
+  .sec-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 36px;
+  }
+  .label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--gold-bright);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .sec-head h2 {
+    font-family: var(--serif);
+    font-size: clamp(28px, 3.5vw, 42px);
+    font-weight: 400;
+    line-height: 1.15;
+  }
+
+  /* Filter Tabs */
+  .tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+  .tab {
+    background: var(--card);
+    color: var(--soft);
+    border: 1px solid var(--border-soft);
+    padding: 9px 16px;
+    border-radius: 99px;
+    font-size: 12.5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .tab.active {
+    background: var(--gold);
+    color: #07080B;
+    border-color: var(--gold);
+  }
+
+  /* Fleet Grid */
+  .fleet-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+  .car-card {
+    background: var(--card);
+    border: 1px solid var(--border-soft);
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.22s, border-color 0.22s;
+  }
+  .car-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--gold);
+  }
+  .car-img-wrap {
+    position: relative;
+    height: 235px;
+    overflow: hidden;
+    background: #090B10;
+  }
+  .car-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s;
+  }
+  .car-card:hover .car-img-wrap img { transform: scale(1.04); }
+  .tier-pill {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgba(7, 8, 11, 0.86);
+    border: 1px solid var(--border);
+    color: var(--gold-bright);
+    font-size: 10.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 4px 10px;
+    border-radius: 99px;
+  }
+  .car-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+  .car-title {
+    font-family: var(--serif);
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  .car-specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+  .car-specs span {
+    background: rgba(255,255,255,0.04);
+    padding: 3px 9px;
+    border-radius: 4px;
+  }
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+    border-top: 1px solid var(--border-soft);
+  }
+  .price-row strong {
+    font-size: 19px;
+    color: var(--gold-bright);
+  }
+  .price-row small {
+    display: block;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  .select-btn {
+    background: rgba(201,164,86,0.14);
+    color: var(--gold-bright);
+    border: 1px solid var(--border);
+    padding: 9px 15px;
+    border-radius: 6px;
+    font-size: 12.5px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .select-btn:hover {
+    background: var(--gold);
+    color: #07080B;
+  }
+
+  /* Interactive Calculator Section */
+  .calc-band {
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .calc-grid {
+    display: grid;
+    grid-template-columns: 1.12fr 0.88fr;
+    gap: 34px;
+    align-items: start;
+  }
+  .panel {
+    background: var(--card);
+    border: 1px solid var(--border-soft);
+    border-radius: 14px;
+    padding: 30px;
+  }
+  .fg { margin-bottom: 18px; }
+  .fg label {
+    display: block;
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--soft);
+    font-weight: 700;
+    margin-bottom: 7px;
+  }
+  .inp {
+    width: 100%;
+    padding: 13px 14px;
+    border-radius: 7px;
+    border: 1px solid rgba(255,255,255,0.14);
+    background: #090B10;
+    color: var(--text);
+    font-size: 14.5px;
+    font-family: var(--sans);
+  }
+  .inp:focus { outline: none; border-color: var(--gold); }
+  .row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+  .addon-list { display: grid; gap: 10px; margin-top: 6px; }
+  .addon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 15px;
+    border-radius: 8px;
+    background: #090B10;
+    border: 1px solid rgba(255,255,255,0.1);
+    cursor: pointer;
+  }
+  .addon.checked {
+    border-color: var(--gold);
+    background: rgba(201,164,86,0.09);
+  }
+  .addon input { accent-color: var(--gold); transform: scale(1.2); margin-right: 10px; }
+  .addon-left { display: flex; align-items: center; font-size: 13.5px; font-weight: 600; }
+  .addon-price { font-size: 12.5px; color: var(--gold-bright); font-weight: 700; }
+
+  /* Summary Receipt Card */
+  .summary-card {
+    background: linear-gradient(165deg, #151924, #0B0D13);
+    border: 1.5px solid var(--gold);
+    border-radius: 14px;
+    padding: 30px;
+    position: sticky;
+    top: 90px;
+  }
+  .sum-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border-soft);
+    font-size: 14px;
+    color: var(--soft);
+  }
+  .sum-line strong { color: var(--text); }
+  .sum-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 18px 0 12px;
+  }
+  .sum-total span { font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--soft); }
+  .sum-total strong { font-family: var(--serif); font-size: 32px; color: var(--gold-bright); }
+  .deposit-box {
+    background: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.35);
+    border-radius: 8px;
+    padding: 12px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+    font-size: 13px;
+  }
+  .deposit-box strong { color: #4ADE80; font-size: 16px; }
+
+  /* Paystack Preview Modal */
+  .modal-bg {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background: rgba(0,0,0,0.82);
+    backdrop-filter: blur(6px);
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+  }
+  .modal-bg.open { display: flex; }
+  .modal {
+    background: #FFFFFF;
+    color: #0F172A;
+    max-width: 430px;
+    width: 100%;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.6);
+  }
+  .ps-badge {
+    display: inline-block;
+    background: #E0F2FE;
+    color: #0284C7;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 99px;
+    margin-bottom: 10px;
+  }
+
+  footer {
+    background: #040507;
+    border-top: 1px solid var(--border-soft);
+    padding: 44px 22px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  .foot-in {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  @media (max-width: 960px) {
+    .hero-grid, .fleet-grid, .calc-grid { grid-template-columns: 1fr; }
+    .menu { display: none; }
+    .hero-showcase img { height: 280px; }
+    .row-2 { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div>LAGOS (LEKKI PHASE 1 HQ) <span class="dot">•</span> ABUJA <span class="dot">•</span> PORT HARCOURT <span class="dot">•</span> KIGALI &amp; USA</div>
+    <div>24/7 VIP DESK: <a href="tel:+2349070006661">+234 907 000 6661</a> <span class="dot">•</span> <a href="tel:+2347018122546">+234 701 812 2546</a></div>
+  </div>
+</div>
+
+<header>
+  <nav class="nav">
+    <a href="#" class="logo-wrap">
+      <img src="assets/logo.png" alt="JAutos Luxury Car Rental">
+    </a>
+    <ul class="menu">
+      <li><a href="#fleet">2026 Luxury Fleet</a></li>
+      <li><a href="#booking">Instant Quote &amp; Escort</a></li>
+      <li><a href="#protocol">Airport &amp; Security Protocol</a></li>
+    </ul>
+    <a href="#booking" class="nav-cta">Reserve Vehicle →</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <span class="kicker">200+ Luxury Vehicles Nationwide · Chauffeur &amp; Armed Escort</span>
+      <h1>Command every arrival.<br><em>Instant</em> VIP fleet booking.</h1>
+      <p>
+        From the majestic <strong>Rolls-Royce Cullinan</strong> and <strong>2025 Range Rover Autobiography</strong> to armoured executive convoys, MMIA airport tarmac pickups, and armed MOPOL security protocol across Lagos, Abuja, and Port Harcourt.
+      </p>
+      <div class="hero-btns">
+        <a href="#booking" class="btn-gold">Configure SUV + Escort Quote →</a>
+        <a href="#fleet" class="btn-outline">Explore Live Fleet</a>
+      </div>
+      <div class="stats">
+        <div>
+          <strong>200+</strong>
+          <span>Verified Luxury Vehicles</span>
+        </div>
+        <div>
+          <strong>24/7</strong>
+          <span>Chauffeur &amp; Armed Escort</span>
+        </div>
+        <div>
+          <strong>4 Hubs</strong>
+          <span>Lagos · Abuja · PH · Kigali</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-showcase">
+      <img src="assets/rangerover.jpg" alt="2025 Range Rover Autobiography Lagos JAutos">
+      <div class="showcase-caption">
+        <div>
+          <strong>2025 Range Rover Autobiography</strong>
+          <small>Chauffeur-Driven · Lekki Phase 1 / VI / Ikoyi / Abuja</small>
+        </div>
+        <button class="select-btn" onclick="pickCar(1)">Book Now →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fleet">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="label">JAutos Verified Arrivals</span>
+        <h2>Select your executive or exotic vehicle.</h2>
+      </div>
+      <div class="tabs">
+        <button class="tab active" onclick="filterFleet('ALL', this)">All Featured (6)</button>
+        <button class="tab" onclick="filterFleet('EXOTIC', this)">Exotic &amp; Presidential</button>
+        <button class="tab" onclick="filterFleet('SUV', this)">Executive SUVs</button>
+        <button class="tab" onclick="filterFleet('SEDAN', this)">Luxury Sedans</button>
+      </div>
+    </div>
+
+    <div class="fleet-grid" id="fleetGrid"></div>
+  </div>
+</section>
+
+<section id="booking" class="calc-band">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="label">Instant Booking &amp; Protocol Configurator</span>
+        <h2>Calculate your trip &amp; lock availability in 60 seconds.</h2>
+      </div>
+    </div>
+
+    <div class="calc-grid">
+      <div class="panel">
+        <div class="row-2">
+          <div class="fg">
+            <label>1. Select Vehicle</label>
+            <select id="cVehicle" class="inp" onchange="recalc()"></select>
+          </div>
+          <div class="fg">
+            <label>2. City &amp; Dispatch Hub</label>
+            <select id="cCity" class="inp" onchange="recalc()">
+              <option value="Lagos (Lekki / VI / Ikoyi / Mainland)">Lagos (Lekki / VI / Ikoyi / Mainland)</option>
+              <option value="Abuja (Maitama / Wuse / Airport)">Abuja (Maitama / Wuse / Airport)</option>
+              <option value="Port Harcourt (GRA / Airport)">Port Harcourt (GRA / Airport)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div class="fg">
+            <label>3. Pickup Date</label>
+            <input type="date" id="cDate" class="inp">
+          </div>
+          <div class="fg">
+            <label>4. Duration (Days) — <span style="color:var(--gold-bright);">10% Off 5+ Days!</span></label>
+            <input type="number" id="cDays" class="inp" min="1" max="60" value="2" oninput="recalc()">
+          </div>
+        </div>
+
+        <div class="fg">
+          <label>5. Security Escort &amp; Airport Protocol Add-Ons</label>
+          <div class="addon-list">
+            <label class="addon" id="lblMopol">
+              <span class="addon-left">
+                <input type="checkbox" id="addMopol" onchange="recalc()">
+                🛡️ Armed MOPOL Escort Officer (In-Vehicle Protection)
+              </span>
+              <span class="addon-price">+₦85,000 / day</span>
+            </label>
+
+            <label class="addon" id="lblHilux">
+              <span class="addon-left">
+                <input type="checkbox" id="addHilux" onchange="recalc()">
+                🚓 Hilux Escort Chase Vehicle + Tactical Team
+              </span>
+              <span class="addon-price">+₦185,000 / day</span>
+            </label>
+
+            <label class="addon" id="lblAirport">
+              <span class="addon-left">
+                <input type="checkbox" id="addAirport" onchange="recalc()">
+                ✈️ VIP Airport Meet, Greet &amp; Fast-Track Transfer
+              </span>
+              <span class="addon-price">+₦65,000 flat</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="row-2" style="margin-top:18px;">
+          <div class="fg" style="margin-bottom:0;">
+            <label>Client / Corporate Name</label>
+            <input type="text" id="cName" class="inp" placeholder="e.g. Chief Tunde Adeyemi / Chevron NG">
+          </div>
+          <div class="fg" style="margin-bottom:0;">
+            <label>WhatsApp / Mobile Number</label>
+            <input type="tel" id="cPhone" class="inp" placeholder="e.g. +234 803 000 0000 / +44...">
+          </div>
+        </div>
+      </div>
+
+      <div class="summary-card">
+        <span class="label">Live Reservation Manifest</span>
+        <h3 id="sumCarName" style="font-family:var(--serif);font-size:24px;margin-bottom:14px;">2025 Range Rover Autobiography</h3>
+
+        <div class="sum-line"><span>Daily Chauffeur Rate</span><strong id="sumDaily">₦750,000</strong></div>
+        <div class="sum-line"><span>Duration</span><strong id="sumDays">2 Days</strong></div>
+        <div class="sum-line" id="discRow" style="display:none;color:#4ADE80;"><span>Multi-Day VIP Discount (10%)</span><strong id="sumDisc" style="color:#4ADE80;">-₦0</strong></div>
+        <div class="sum-line"><span>Security &amp; Protocol Add-Ons</span><strong id="sumAddons">₦0</strong></div>
+
+        <div class="sum-total">
+          <span>Estimated Total</span>
+          <strong id="sumTotal">₦1,500,000</strong>
+        </div>
+
+        <div class="deposit-box">
+          <span>🔒 30% Instant Fleet Lock Deposit:</span>
+          <strong id="sumDeposit">₦450,000</strong>
+        </div>
+
+        <button class="btn-gold" style="width:100%;justify-content:center;margin-bottom:10px;" onclick="openPaystackDemo()">
+          💳 Pay 30% Deposit Online (Paystack) →
+        </button>
+        <button class="btn-outline" style="width:100%;cursor:pointer;" onclick="sendWhatsAppBooking()">
+          💬 Confirm Instantly via JAutos WhatsApp ↗
+        </button>
+        <p style="font-size:11.5px;color:var(--muted);margin-top:12px;text-align:center;">
+          Includes vetted uniformed chauffeur · Fuel &amp; interstate itinerary customizable upon confirmation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="protocol">
+  <div class="wrap">
+    <div class="fleet-grid">
+      <div class="panel">
+        <span class="label">01 · Diaspora &amp; Diplomats</span>
+        <h3 style="font-family:var(--serif);font-size:22px;margin-bottom:10px;">Seamless UK / US / Kigali Arrivals</h3>
+        <p style="color:var(--soft);font-size:14px;">Pre-book from London, Houston, Atlanta, or Kigali before takeoff. Your chauffeur and optional armed escort await your arrival at MMIA Lagos or Nnamdi Azikiwe Abuja.</p>
+      </div>
+      <div class="panel">
+        <span class="label">02 · Vetted Security Protocol</span>
+        <h3 style="font-family:var(--serif);font-size:22px;margin-bottom:10px;">MOPOL &amp; Escort Convoy</h3>
+        <p style="color:var(--soft);font-size:14px;">Official police escort officers and escort Hilux chase vehicles coordinated discreetly for C-suite executives, oil &amp; gas site visits, celebrities, and luxury weddings.</p>
+      </div>
+      <div class="panel">
+        <span class="label">03 · Lekki Phase 1 Headquarters</span>
+        <h3 style="font-family:var(--serif);font-size:22px;margin-bottom:10px;">Direct Fleet Oversight</h3>
+        <p style="color:var(--soft);font-size:14px;">2A Princess Folashade Ojutalayo Close, Off Theophilus Orji / Fola Osibo Street, Lekki Phase 1, Lagos · 24/7 Hotline: +234 907 000 6661.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paystack Deposit Preview Modal -->
+<div class="modal-bg" id="psModal" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal">
+    <span class="ps-badge">🔒 PAYSTACK SECURE CHECKOUT READY</span>
+    <h3 style="font-size:20px;margin-bottom:6px;">JAutos Instant 30% Fleet Lock</h3>
+    <p style="font-size:13.5px;color:#475569;margin-bottom:16px;" id="psSummaryText"></p>
+    <div style="background:#F8FAFC;border:1px solid #E2E8F0;border-radius:8px;padding:14px;margin-bottom:16px;font-size:13px;">
+      <div style="display:flex;justify-content:space-between;margin-bottom:6px;"><span>Cards / Transfer / Apple Pay:</span><strong>NGN &amp; USD Accepted</strong></div>
+      <div style="display:flex;justify-content:space-between;"><span>Settlement Account:</span><strong>JAutos Official Bank</strong></div>
+    </div>
+    <button onclick="sendWhatsAppBooking()" style="width:100%;padding:13px;background:#0F172A;color:#FFF;border:none;border-radius:8px;font-weight:700;cursor:pointer;margin-bottom:8px;">
+      Proceed &amp; Notify Dispatch on WhatsApp ↗
+    </button>
+    <button onclick="document.getElementById('psModal').classList.remove('open')" style="width:100%;padding:10px;background:none;border:none;color:#64748B;cursor:pointer;font-size:13px;">
+      Close Preview
+    </button>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-in">
+    <div>© 2026 <strong>JAutos Car Rentals &amp; Leasing Nigeria</strong> · 2A Princess Folashade Ojutalayo Close, Fola Osibo, Lekki Phase 1, Lagos.</div>
+    <div>24/7 Reservations: +234 907 000 6661 · +234 701 812 2546 · info@jautos.com.ng</div>
+  </div>
+</footer>
+
+<script>
+const FLEET = [
+  { id: 0, tier: "EXOTIC", badge: "Presidential Flagship", name: "Rolls-Royce Cullinan", rate: 1800000, img: "assets/cullinan.jpg", specs: ["Chauffeur Included", "Bespoke Starlight", "VIP Weddings & VVIPs"] },
+  { id: 1, tier: "EXOTIC", badge: "2025 Arrival", name: "2025 Range Rover Autobiography", rate: 750000, img: "assets/rangerover.jpg", specs: ["Executive Rear Suite", "Chauffeur Driven", "Lagos & Abuja"] },
+  { id: 2, tier: "EXOTIC", badge: "Two-Tone Edition", name: "Mercedes-Maybach GLS 600", rate: 850000, img: "assets/maybach.jpg", specs: ["First-Class Lounge", "Chauffeur Included", "Diplomatic Grade"] },
+  { id: 3, tier: "SUV", badge: "Most Booked Convoy SUV", name: "Toyota Land Cruiser GR-Sport V8", rate: 250000, img: "assets/landcruiser.jpg", specs: ["Commanding Presence", "Escort Ready", "Corporate & Oil/Gas"] },
+  { id: 4, tier: "SEDAN", badge: "Executive Sedan", name: "Mercedes-Benz S-Class (W223)", rate: 420000, img: "assets/sclass.jpg", specs: ["C-Suite Transfers", "Whisper Quiet", "Airport & Meetings"] },
+  { id: 5, tier: "SUV", badge: "Cabin Experience", name: "Range Rover Executive Suite (LWB)", rate: 650000, img: "assets/cockpit.jpg", specs: ["Meridian 3D Audio", "Panoramic Cabin", "Weekly Corporate Rate"] }
+];
+
+let activeFilter = "ALL";
+const fmt = n => "₦" + Math.round(n).toLocaleString("en-NG");
+
+function init() {
+  const sel = document.getElementById("cVehicle");
+  sel.innerHTML = FLEET.map(c => `<option value="${c.id}" ${c.id===1?'selected':''}>${c.name} — ${fmt(c.rate)}/day</option>`).join("");
+  const tomorrow = new Date(Date.now() + 86400000).toISOString().split("T")[0];
+  document.getElementById("cDate").value = tomorrow;
+  renderFleet();
+  recalc();
+}
+
+function filterFleet(tier, btn) {
+  activeFilter = tier;
+  document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
+  btn.classList.add("active");
+  renderFleet();
+}
+
+function renderFleet() {
+  const list = FLEET.filter(c => activeFilter === "ALL" || c.tier === activeFilter);
+  document.getElementById("fleetGrid").innerHTML = list.map(c => `
+    <div class="car-card">
+      <div class="car-img-wrap">
+        <span class="tier-pill">${c.badge}</span>
+        <img src="${c.img}" alt="${c.name}" loading="lazy">
+      </div>
+      <div class="car-body">
+        <div>
+          <h3 class="car-title">${c.name}</h3>
+          <div class="car-specs">${c.specs.map(s => `<span>${s}</span>`).join("")}</div>
+        </div>
+        <div class="price-row">
+          <div>
+            <strong>${fmt(c.rate)}</strong>
+            <small>per day · Chauffeur incl.</small>
+          </div>
+          <button class="select-btn" onclick="pickCar(${c.id})">Select &amp; Quote →</button>
+        </div>
+      </div>
+    </div>
+  `).join("");
+}
+
+function pickCar(id) {
+  document.getElementById("cVehicle").value = id;
+  recalc();
+  document.getElementById("booking").scrollIntoView({ behavior: "smooth" });
+}
+
+function recalc() {
+  const car = FLEET[parseInt(document.getElementById("cVehicle").value, 10)] || FLEET[1];
+  const days = Math.max(1, parseInt(document.getElementById("cDays").value || "1", 10));
+  const mopol = document.getElementById("addMopol").checked;
+  const hilux = document.getElementById("addHilux").checked;
+  const airport = document.getElementById("addAirport").checked;
+
+  document.getElementById("lblMopol").classList.toggle("checked", mopol);
+  document.getElementById("lblHilux").classList.toggle("checked", hilux);
+  document.getElementById("lblAirport").classList.toggle("checked", airport);
+
+  let base = car.rate * days;
+  let disc = days >= 5 ? base * 0.10 : 0;
+  let addons = (mopol ? 85000 * days : 0) + (hilux ? 185000 * days : 0) + (airport ? 65000 : 0);
+  let total = base - disc + addons;
+  let dep = total * 0.30;
+
+  document.getElementById("sumCarName").textContent = car.name;
+  document.getElementById("sumDaily").textContent = fmt(car.rate) + "/day";
+  document.getElementById("sumDays").textContent = days + (days === 1 ? " Day" : " Days");
+  document.getElementById("discRow").style.display = disc > 0 ? "flex" : "none";
+  document.getElementById("sumDisc").textContent = "-" + fmt(disc);
+  document.getElementById("sumAddons").textContent = fmt(addons);
+  document.getElementById("sumTotal").textContent = fmt(total);
+  document.getElementById("sumDeposit").textContent = fmt(dep);
+
+  window.__currentQuote = { car, days, mopol, hilux, airport, total, dep };
+}
+
+function openPaystackDemo() {
+  recalc();
+  const q = window.__currentQuote;
+  document.getElementById("psSummaryText").innerHTML = `Locking <strong>${q.car.name}</strong> for <strong>${q.days} day(s)</strong> · 30% Deposit: <strong>${fmt(q.dep)}</strong> (Total: ${fmt(q.total)}).`;
+  document.getElementById("psModal").classList.add("open");
+}
+
+function sendWhatsAppBooking() {
+  recalc();
+  const q = window.__currentQuote;
+  const city = document.getElementById("cCity").value;
+  const date = document.getElementById("cDate").value;
+  const name = document.getElementById("cName").value.trim() || "VIP Client";
+  const phone = document.getElementById("cPhone").value.trim() || "Provided on chat";
+  const extras = [
+    q.mopol ? "Armed MOPOL Officer" : null,
+    q.hilux ? "Hilux Tactical Escort Team" : null,
+    q.airport ? "VIP Airport Pickup" : null
+  ].filter(Boolean).join(", ") || "Standard Chauffeur Protocol";
+
+  const msg = `Good day *JAutos VIP Reservations*,\n\nI would like to lock in this fleet booking:\n• *Vehicle:* ${q.car.name}\n• *Hub:* ${city}\n• *Pickup Date:* ${date} (${q.days} Day${q.days>1?'s':''})\n• *Protocol Add-Ons:* ${extras}\n• *Estimated Total:* ${fmt(q.total)}\n• *30% Deposit Ready:* ${fmt(q.dep)}\n• *Client:* ${name} (${phone})`;
+  window.open(`https://wa.me/2349070006661?text=${encodeURIComponent(msg)}`, "_blank");
+}
+
+init();
+</script>
+</body>
+</html>
